@@ -1,0 +1,19 @@
+<div class="main">
+  <div class="left">
+    <h1 class="main-heading pink">A comprehensive platform for reliable</h1>
+    <h2 id="typing-text" class="text-white ml12">job opportunities and internships.</h2>
+    <h5 class="text-white">Get Discovered. Get Hired.</h5>
+    <div class="actions">
+      <a href="/jobs" class="btn btn-lg lbtn mainBtn text-white"> I'm A Job Seeker </a>
+      <%if(!locals.userEmail){%>
+        <a href="/login" id='showFormBtn' class="btn btn-lg lbtn mx-2 mainBtn text-white">I'm A Recruiter</a>
+        <%}else{%>
+          <a href="/viewPosted" class="btn btn-lg lbtn mx-2 mainBtn text-white">I'm A Recruiter</a>
+
+          <%}%>
+    </div>
+  </div>
+  <div class="right">
+    <img src="images/banner.png" alt="banner" />
+  </div>
+</div>

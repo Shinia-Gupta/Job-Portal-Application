@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h1 class="text-center text-white">Add Job</h1>
+</div>
+<%if(errorMsg){%>
+  <div class="alert alert-danger" role="alert">
+    <%=errorMsg%>
+  </div>
+  <%}%>
+    <form action="/addJob" method="post">
+      <!-- <input type="hidden" id="id" name="id" > -->
+      <select class="form-select form-select-lg mb-3" name="category" aria-label="Large select example">
+        <option value="select job category">select job category</option>
+        <option value="Tech">Tech</option>
+        <option value="Non-Tech">Non-Tech</option>
+      </select>
+      <select class="form-select form-select-lg mb-3" name="designation" aria-label="Large select example">
+        <option selected>select a job designation</option>
+        <option value="HR">HR</option>
+        <option value="SDE">SDE</option>
+        <option value="DevOps">DevOps</option>
+        <option value="MERN Developer">MERN Developer</option>
+        <option value="MEAN Developer">MEAN Developer</option>
+        <option value="JAVA Developer">JAVA Developer</option>
+        <option value="Front-End Developer">Front-End Developer</option>
+        <option value="Back-End Developer">Back-End Developer</option>
+        <option value="Full Stack Developer">Full Stack Developer</option>
+      </select>
+      <label for="location" class="col-sm-2 col-form-label text-white fs-5">Enter Job Location</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control mb-3" id="location" name="location">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text " id="basic-addon1">Company Name</span>
+        <input type="text" class="form-control" name="company" placeholder="Company Name" aria-label="Company Name"
+          aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control mb-2" name="annualSal" placeholder="Enter Salary" aria-label="salary">
+        <span class="input-group-text mb-2">Total Positions </span>
+        <input type="text" class="form-control mb-2" placeholder="Number of openings" aria-label="positions"
+          name="openings">
+      </div>
+      <div class="input-group mb-3">
+        <select class="form-select form-select-lg " name="skills" aria-label="Large select example" multiple>
+          <option selected>select skills for the job</option>
+          <option value="Java">Java</option>
+          <option value="Angular">Angular</option>
+          <option value="React">React</option>
+          <option value="SQL">SQL</option>
+          <option value="MongoDB">MongoDB</option>
+          <option value="Bootstrap">Bootstrap</option>
+          <option value="Express">Express</option>
+          <option value="Data Structures and Algorithms">Data Structures and Algorithms</option>
+          <option value="Node JS">Node JS</option>
+          <option value="C++">C++</option>
+
+        </select>
+        <span class="input-group-text">Apply By </span>
+        <input type="date" class="form-control" name="applyBy">
+      </div>
+      <button class="btn btn-success px-2">Add</button>
+    </form>

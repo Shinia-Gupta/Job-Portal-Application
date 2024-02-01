@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(5, 5, 69);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(5, 5, 69);
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.pink {
+    color: #ff2c90;
+}
+
+.mainBtn {
+    /* padding: 5px; */
+    background-color: #ff2c90;
+}
+
+.dropItem:hover {
+    background-color: rgb(201, 88, 107);
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+#typing-text {
+    border-right: 0.15em solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+.job-cards-container {
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#site-logo {
+    position: relative;
+    animation: slideFromLeft 1s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.setWidth {
+    width: 100%;
+    height: min-content;
+}

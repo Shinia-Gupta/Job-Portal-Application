@@ -1,0 +1,44 @@
+<div class="job-cards-container d-flex mt-5">
+  <%if(jobs.length==0){%>
+    <div class="container my-2 text-danger">
+      <h1>Oops! No jobs matching your search were found</h1>
+    </div>
+    <%} else { %>
+      <%jobs.forEach(job=>{%>
+        <div class="card mr-25" style="width: 18rem;">
+          <div class="card-body bg-dark ">
+            <div class="mb-2"><span style="width: 160px"
+                class="bg-primary bg-opacity-25 text-white border border-success border border-success p-1 border-opacity-50 rounded">
+                Actively hiring<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-graph-up-arrow text-success mx-2" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5" />
+                </svg></div>
+            <h5 class="card-title text-warning my-2">
+              <%=job.company%>
+            </h5>
+            <h6 class="card-subtitle mb-2 text-white my-2">
+              <%=job.category%><span class="card-text text-info">
+                  <%=job.designation%>
+                </span>
+            </h6>
+            <p class="card-text text-white"><i class="bi bi-geo-alt-fill"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg>
+                <%=job.location%>
+              </i></p>
+            <p class="card-text text-white">₹ <%=job.annualSal%> LPA</p>
+
+            
+            <div class="btn btn-outline-info skillBtn mb-2">
+              <%= job.skills %>
+            </div>
+
+            <a href="/viewDesc/<%=job.id%>" class="btn btn-outline-success">View Details</a>
+          </div>
+        </div>
+
+        <%})%>
+</div>
+<%}%>

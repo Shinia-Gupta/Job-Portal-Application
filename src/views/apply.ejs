@@ -1,0 +1,40 @@
+<h1 class="text-info">Apply Easily within a minute!</h1>
+<%if(errorMsg){%>
+  <div class="alert alert-danger" role="alert">
+    <%=errorMsg%>
+
+  </div>
+  <%}%>
+    <%if(success){%>
+      <div class="alert alert-success" role="alert">
+        Success!Application Submitted!
+      </div>
+      <%}%>
+        <form action="/apply" method="post" enctype="multipart/form-data">
+          <input type="hidden" id="id" name="id" value="<%=job.id%>">
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <input type="text" class="form-control" placeholder="Username" name='username' aria-label="username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input type="email" class="form-control" placeholder="email" name='email' aria-label="email"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Contact</span>
+            <input type="number" class="form-control" placeholder="contact" name='contact' aria-label="contact"
+              aria-describedby="basic-addon1" maxlength="10">
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Resume</span>
+            <input type="file" class="form-control" placeholder="Choose a file" name='resume' aria-label="file"
+              accept=".pdf">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit your Application</button>
+
+        </form>
