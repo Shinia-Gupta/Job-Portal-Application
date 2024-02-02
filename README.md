@@ -84,16 +84,16 @@ Contributions are welcome! If you'd like to contribute to the Easily Job Portal 
 ![Screenshot 2024-02-02 001640](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/f9d9edbe-5cf0-4105-9d23-d783f0edacea)
 
 ### View Posted Jobs Section
-![Screenshot 2024-02-02 002232](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/d265c862-de8a-4175-8565-1322ae92e670)
+![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/0c34704a-a977-416a-8c0a-3df75e4492ad)
 
 ### View Jobs Description
 ![Screenshot 2024-02-02 002313](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/6cc10538-1149-4ec4-be86-26794aba525f)
 
 ### Add a Job(Recruiter)
-![Screenshot 2024-02-02 002412](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/e0cfd6a0-68e8-47be-8dd2-8c4da3f5c84d)
+![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/45112984-c975-449d-8b6c-93e97a3a6bfc)
 
 ### Update a Job(Recruiter)
-![Screenshot 2024-02-02 002445](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/03478803-8451-4d1a-b538-2ae3907bdd88)
+![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/d0b7bea6-bdbc-4a06-a1be-cf7f2b4c936e)
 
 ### Delete a Job(Recruiter)
 ![Screenshot 2024-02-02 002507](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/84a0835a-134f-4091-902c-69ead30abca5)
