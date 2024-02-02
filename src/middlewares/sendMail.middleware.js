@@ -5,13 +5,13 @@ export const sendMail=async (req,res)=>{
     const mailTransporter=await nodemailer.createTransport({
         service:'gmail',
         auth:{
-            user:'abc@mail.com',
-            pass:'adfgasdfadff'
+            user:'shiniaatwork@gmail.com',
+            pass:'asufrnhlenirrxue'
         }
     });
 
     const mailOptions={
-        from:'abc@mail.com',
+        from:'shiniaatwork@gmail.com',
         to:email,
         subject:'Application Recieved',
         text:'Dear Applicant,\n\nThank you for applying to our job posting. We appreciate your interest in our company and the position. We will review your application and contact you if you are selected for further consideration.\n\nBest regards,\nYour Company Name '

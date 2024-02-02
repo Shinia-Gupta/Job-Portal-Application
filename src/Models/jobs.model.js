@@ -8,7 +8,7 @@ export default class JobsModel {
     designation,
     location,
     annualSal,
-    skills = 'ReactJS'|| [],
+    skills,
     openings,
     applicants=0
   ) {
@@ -32,7 +32,9 @@ export default class JobsModel {
     return jobs.filter((job) => job.company === company);
   }
 
-  static addJob(id, category, applyBy, company, designation, location, annualSal, skills = ["AngularJS", "ReactJS"], openings, applicants) {
+  static addJob(id, category, applyBy, company, designation, location, annualSal, skillsStr, openings, applicants) {
+    const skills=skillsStr.split(",");
+    console.log(typeof skills);
     const newJob = new JobsModel(id, category, applyBy, company, designation, location, annualSal, skills, openings, applicants);
     jobs.push(newJob);
   }
@@ -44,6 +46,9 @@ export default class JobsModel {
   static updateJob(updatedJob) {
     const jobIndex = jobs.findIndex((job) => job.id == updatedJob.id);
     if (jobIndex !== -1) {
+     let skillsToUpd= updatedJob.skills;
+     skillsToUpd=skillsToUpd.split(',');
+     updatedJob.skills=skillsToUpd;
       jobs[jobIndex] = updatedJob;
       console.log(jobs);
     }

@@ -30,12 +30,12 @@
               </i></p>
             <p class="card-text text-white">₹ <%=job.annualSal%> LPA</p>
 
-            
-            <div class="btn btn-outline-info skillBtn mb-2">
-              <%= job.skills %>
-            </div>
-
-            <a href="/viewDesc/<%=job.id%>" class="btn btn-outline-success">View Details</a>
+            <%job.skills.forEach(skill=>{%>
+              <div class="btn btn-outline-info skillBtn mb-2">
+                <%= skill %>
+              </div>
+              <%})%>
+                <a href="/viewDesc/<%=job.id%>" class="btn btn-outline-success">View Details</a>
           </div>
         </div>
 
