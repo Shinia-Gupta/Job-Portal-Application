@@ -87,7 +87,7 @@ Contributions are welcome! If you'd like to contribute to the Easily Job Portal 
 ![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/0c34704a-a977-416a-8c0a-3df75e4492ad)
 
 ### View Jobs Description
-![Screenshot 2024-02-02 002313](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/6cc10538-1149-4ec4-be86-26794aba525f)
+![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/77cd3097-5bc8-491e-a040-33eecbd6a147)
 
 ### Add a Job(Recruiter)
 ![image](https://github.com/Shinia-Gupta/Job-Portal-Application/assets/113818197/45112984-c975-449d-8b6c-93e97a3a6bfc)
